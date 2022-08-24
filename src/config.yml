@@ -1,0 +1,86 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |            __                  __                   _                                        | #
+# |           (_   _  ._    _  ._ (_   _   _     ._ _  /   _  ._  ._   _   _ _|_                 | #
+# |           __) (/_ | \/ (/_ |  __) (/_ (_ |_| | (/_ \_ (_) | | | | (/_ (_  |_                 | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  WIKI:        https://pedrojm96.com/minecraft-plugin/serversecureconnect/                    | #
+# |  BUG REPORTS: https://www.spigotmc.org/resources/serversecureconnect.53710/                  | #
+# |  AUTHOR: PedroJM96 (pedrojm96.com)                                                           | #
+# |  OFFICIAL SERVER: mc.mundopixels.net                                                         | #
+# |                                                                                              | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+#Only for developers, do not modify.
+debug: false
+
+#Check for updates.
+update-check: true
+
+#The prefix that the plugin will show in the messages.
+prefix: '&6ServerSecureConnect &e>> &7'
+
+#The language of the plugin messages.
+messages: EN
+#Title of the menu.
+menu-title: "&8&lChange to the <server>?"
+
+confirmation-menu: true
+
+#Activate the countdown
+countdown-enable: true
+
+#Countdown to send to the server.
+countdown: 5
+
+#Title of the menu items.
+item-confirm:
+  name: '&6Are you sure'
+  material: 'OAK_SIGN'
+  material-old: 'SIGN'
+item-accept:
+  name: '&aYes'
+  material: 'SLIME_BALL'
+item-cancel:
+  name: '&cNo'
+  material: 'REDSTONE'
+
+#To enable the version check of the player with the server version, set version-check to true.
+#Versions supported by each server.
+server:
+  lobby:
+    version-check: true
+    version-list:
+    - 1.8.8
+    - 1.8.9
+    - 1.9
+    - 1.9.1
+    - 1.9.2
+    - 1.9.3
+    - 1.9.4
+    - 1.10
+    - 1.10.1
+    - 1.10.2
+    - 1.11
+    - 1.11.1
+    - 1.11.2
+    - 1.12
+    - 1.12.1
+    - 1.12.2
+    - 1.13
+    - 1.13.1
+    - 1.13.2
+    - 1.14
+    - 1.14.1
+    - 1.14.2
+    - 1.14.3
+    - 1.14.4
+    - 1.15
+    - 1.15.1
+    - 1.15.2
+  survival:
+    version-check: true
+    version-list:
+    - 1.15.2

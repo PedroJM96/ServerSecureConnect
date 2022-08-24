@@ -1,0 +1,7 @@
+name: ServerSecureConnect
+version: 1.4.6
+main: com.pedrojm96.serversecureconnect.ServerSecureConnect
+author: PedroJM96
+description: Connect between servers securely using local bukkit commands.
+api-version: 1.13
+softdepend: [ViaVersion]
