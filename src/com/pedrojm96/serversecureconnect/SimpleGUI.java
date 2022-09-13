@@ -9,7 +9,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.pedrojm96.core.CoreUtils;
+import com.pedrojm96.core.CoreColor;
+import com.pedrojm96.core.CoreVersion;
 
 
 
@@ -35,7 +36,7 @@ public class SimpleGUI {
 		
 		for (int i = 0; i < slot; i++)
 		{
-			if(CoreUtils.Version.getVersion().esMayorIgual(CoreUtils.Version.v1_13)) {
+			if(CoreVersion.getVersion().esMayorIgual(CoreVersion.v1_13)) {
 				String material = "WHITE_STAINED_GLASS_PANE";
 				switch(color) {
 				case 0:
@@ -121,9 +122,9 @@ public class SimpleGUI {
 	public static ItemStack createItem(String name,List<String> lore,String mate,int shrt) {
 		ItemStack i = new ItemStack(Material.getMaterial(mate),1,(short)shrt);
 		ItemMeta im = i.getItemMeta();
-		name = Util.rColor(name);
+		name =  CoreColor.colorCodes(name);
 		im.setDisplayName(name);
-		lore = Util.rColorList(lore);
+		lore = CoreColor.rColorList(lore);
 		im.setLore(lore);
 		i.setItemMeta(im);
 		return i;
@@ -132,11 +133,11 @@ public class SimpleGUI {
 	public static ItemStack createItem(String name,String mate,int shrt) {
 		Material material = Material.valueOf(mate);
 		if(material==null) {
-			System.out.print("This material "+mate+" is not valid in the "+CoreUtils.Version.getVersion().toString());
+			System.out.print("This material "+mate+" is not valid in the "+CoreVersion.getVersion().toString());
 		}
 		ItemStack i = new ItemStack(material,1,(short)shrt);
 		ItemMeta im = i.getItemMeta();
-		String n = Util.rColor(name);
+		String n = CoreColor.colorCodes(name);
 		im.setDisplayName(n);
 		i.setItemMeta(im);
 		return i;

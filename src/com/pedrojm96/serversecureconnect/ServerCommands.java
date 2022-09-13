@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
 import com.pedrojm96.core.CoreColor;
-import com.pedrojm96.core.CoreUtils;
+import com.pedrojm96.core.CoreVersion;
 import com.pedrojm96.core.CoreViaVersion;
 import com.pedrojm96.core.command.CorePluginCommand;
 
@@ -130,7 +130,7 @@ public class ServerCommands extends CorePluginCommand{
 	
 	private String getMaterialData(String path) {
 		String mate_item_confirm;
-		if(CoreUtils.Version.getVersion().esMayorIgual(CoreUtils.Version.v1_13)) {
+		if(CoreVersion.getVersion().esMayorIgual(CoreVersion.v1_13)) {
 			if(this.plugin.config.isSet(path+".material")) {
 				mate_item_confirm = this.plugin.config.getString(path+".material");
 			}else {

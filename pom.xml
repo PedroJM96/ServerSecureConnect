@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.pedrojm96</groupId>
   <artifactId>ServerSecureConnect</artifactId>
-  <version>1.4.6</version>
+  <version>1.4.7</version>
   <name>ServerSecureConnect</name>
   <description>It is a plugin to connect between servers securely using local bukkit commands.</description>
   <properties>
@@ -120,7 +120,7 @@
 	<dependency>
 		<groupId>com.pedrojm96</groupId>
 		<artifactId>CoreLibBukkit</artifactId>
-		<version>2.1.0</version>
+		<version>[2.0.0,)</version>
 		<scope>compile</scope>
 	</dependency>
 	<!--Metrics-->
