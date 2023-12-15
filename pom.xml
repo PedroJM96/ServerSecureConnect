@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.pedrojm96</groupId>
   <artifactId>ServerSecureConnect</artifactId>
-  <version>1.5.1</version>
+  <version>1.5.2</version>
   <name>ServerSecureConnect</name>
   <description>It is a plugin to connect between servers securely using local bukkit commands.</description>
   <properties>
@@ -123,6 +123,7 @@
 		<version>[2.0.0,)</version>
 		<scope>compile</scope>
 	</dependency>
+	
 	<!--Metrics-->
      <dependency>
        <groupId>org.bstats</groupId>
